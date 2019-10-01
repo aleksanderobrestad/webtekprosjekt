@@ -1,0 +1,79 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .cover{
+        background: url('jostein.jpg') no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+
+    .cover h1{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 7em;
+        color: white;
+    }
+
+    .content{
+        width: 960px;
+        margin: auto;
+        padding-top: 100px;
+    }
+   
+   figure {
+    text-align: center;
+    margin: auto;
+   }
+
+   figure img{
+       width: auto;
+       height: auto;
+       max-width: 100%;
+   }
+   
+   section {
+   border: 1px solid;
+   padding-left: 50px;
+   padding-right: 50px;
+   margin-bottom:20px;
+   }
+   
+   header {
+   height: 100px;
+   margin-bottom: 20px;
+   margin-top: 40px;
+  
+   }
+   
+   h1, h2 {
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+   }
+   
+  h2 span {
+   font-size: small; 
+  }
+   
+   ul {
+     padding-left: 18px;
+   }
+  
+  section>ol>li {
+      margin-bottom: 20px;
+  }
+  
+  .title{
+      display: block;  
+      margin-bottom: 10px;
+  }
+   
+   footer {
+   margin-top: 100px;
+   font-size: 13px;
+   
+   }

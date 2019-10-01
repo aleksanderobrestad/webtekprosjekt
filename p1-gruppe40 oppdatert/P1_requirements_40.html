@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+    	<title>P1 Project Requirements 40</title>
+    	<link href="p1.css" rel="stylesheet">
+	</head>
+	<body>
+    	<div class="cover">
+        	<h1>Jostein Hodne</h1>
+    	</div>
+    	<div class="content">
+    		<header>
+  				<h1>P1 Project Requirements Group 40</h1>
+      			<h2>Aleksander, Njål, Sindre, Sigbjørn and Fredrik<br><span>September 18, 2019</span></h2>
+			</header>
+		<main>
+			<section>
+				<h2> Our Client </h2>
+				<ul>
+					<li>Client Name: Jostein Hodne</li>
+					<li>Contact Person: Njål Sørland</li>
+				</ul>
+				<p>Our client is Jostein Hodne. He is an 18 year old musician based in Trondhiem, Norway.
+					We were introduced to Jostein through one of our team members, Njål, who have known Jostein for x years.
+					Jostein is an up and coming acoustic fingerstyle guitarist who already at an early age have establish himself in the acoustic guitar community.
+					His goal is to spread his music to a more mainstream audience.
+					We want to help Jostein reach his goal and will help him build a website where he can promote his music, announce future events and get in contact with his fanbase and other musicians.
+				</p>
+				<figure>
+					<img src="jostein.jpg" alt="Jostein">
+					<figcaption>Jostein</figcaption>
+				</figure>
+			</section>
+			<section>
+				<h2> Purpose and Goals </h2>
+				<p>Our websites goal is to give Jostein a modern, accessible and x hub where he can show of his talents.
+					We want to broadcast his music to a new and broader audience while maintaining the fans who already follow him.
+					Thus, our goal for the website is to make it as easy as possible to discover, follow and contact Jostin.
+					The website will be easy to navigate through a menu with every part of the website always accessible.
+					We want to reach Jostein’s goals for the website through a home/news page, a biography, a showcase of his music and videos, upcoming events, and contact information.
+				</p>
+			</section>
+			<section>
+				<h2> Audience </h2>
+				<p>	The websites main audience will be Josteins fans who want to follow and keep up to date with the release of new music, upcoming events and social media.
+					We also want to target a broader audience of music fans who might enjoy the music and talents of Jostein.
+					The site will also be targeted at potential talent scouts who might have heard about Jostein’s skills and want to reach out to him.
+				</p>
+			</section>
+			<section>
+				<h2> Content of the Website and Organization </h2>
+				<ol>
+					<li> <span class="title">"Home/news"</span>
+						This page will be the main page of the website.
+						It will contain a small bio and a newsfeed where Jostein can publish news about upcoming music, events, videos and more.
+						This will be where the fans can receive all the information they need at a glance.
+						Our goal for this page is to make it simple, yet contain enough information without making it cluttered.
+					</li>
+					<li> <span class="title">"Biography"</span>
+						This page will contain a longer bio and description of who Jostein Hodne is, his goals, his accomplishments and pictures.
+						This is where new fans and scouts will get to know who Jostein is and what he has accomplished so far in his career.
+						The page will contain pictures from throughout his career.
+					</li>
+					<li> <span class="title">"Music"</span>
+						This page will contain all of Josteins songs. The page will be divided into different sections, each containing one of his earlier projects.
+						There should be links to the songs on spotify and other music streaming platforms, as well as the ability to play small samples.
+						The should also be a small description of the song, with Josteins own thoughts and notes for the individual song.
+					</li>
+					<li> <span class="title">"Events"</span>
+						This page will list all of Josteins upcoming events and concerts.
+					</li>
+					<li> <span class="title">"Contact</span>
+						This page will include Josteins contact info, as well as links to his social medias.
+						There will also be a contact form where you can fill in your email-address and message, and automatically generate an email to Jostein.
+					</li>
+				</ol>
+			</section>
+			<section>
+				<h2> Functional and nonfunctional requirements </h2>
+				<p>Functional requirements:</p>
+				<ul>
+					<li>The home page should always be reachable.</li>
+					<li> The different tabs mentioned above should always be visible from every part of the website.</li>
+					<li> The event page should include time, place and a link to ticket sale (if possible and accessible) for every event.</li>
+					<li> The biography page should include pictures as well as text.</li>
+					<li> The contact page should include an option to sign up for a newsletter.</li>
+					<li>The contact page should include direct links to all social media platforms.</li>
+					<li>The contact page should include an form to directly send a email to Jostein.</li>
+					<li>The music/video page should include in-browser support for Spotify.</li>
+					<li>The music/video page should display youtube videos directly at the page.</li>
+				</ul>
+				<p>Non-functional requirements</p>
+				<ul>
+					<li>The website should load in a reasonable time.</li>
+					<li>The website should be accessible on both laptops and mobile.</li>
+					<li>The website should be up-and-running 99.99% of the time.</li>
+					<li>The information on the biography page should be continuously updated, both text and photos.</li>
+					<li>The entire website should check most of the WCAG 2 guidelines.</li>
+				</ul>
+			</section>
+			<section>
+				<h2> Final Location of the Website </h2>
+				<p> Jostein will host the website when the project is over. </p>
+			</section>
+		</main>
+	</div>
+	<footer>
+		<p>Aleksander, Njål, Sindre, Sigbjørn and Fredrik</p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript">
+			(function() {
+				var windowHeight = $(window).height(),
+					introImage = $('div.cover'),
+					introHeadingHeight = introImage.find('h1').height();
+				introImage.css('padding', (windowHeight - introHeadingHeight)/2 + 'px 0');
+				$(document).on('scroll', function() {
+					introImage.slideUp(1000, function() { $(document).off('scroll'); });
+				});
+			})();
+		</script>
+	</body>
+</html>
